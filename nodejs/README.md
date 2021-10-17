@@ -34,6 +34,11 @@ To run the container with volume, run:
 docker run -p 3001:3001 --rm --name <container name> -v <volume name>:<internal container path> <image primary name>:<image sub name>
 ```
 
+To run the container with bind mount, run:
+```
+docker run -p 3001:3001 --rm --name <container name> -v "<local full path to the code folder>:<internal container path>" <image primary name>:<image sub name>
+```
+
 To list the volumes, run:
 ```
 docker volume ls
